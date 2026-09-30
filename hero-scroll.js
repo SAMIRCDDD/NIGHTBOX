@@ -101,7 +101,7 @@
     if (pendingFrame && video.cancelVideoFrameCallback) video.cancelVideoFrameCallback(pendingFrame);
     scene.classList.remove('has-frame', 'is-enhanced');
     scene.classList.add('is-static');
-    poster.src = 'assets/video/nightbox-scroll-end.jpg';
+    poster.src = 'nightbox-scroll-end.jpg';
     video.pause();
     toggle.hidden = true;
     cue.textContent = 'DÉCOUVREZ LA NIGHTBOX';
@@ -115,9 +115,9 @@
     present(0);
     scene.classList.remove('is-static');
     scene.classList.add('is-enhanced');
-    poster.src = 'assets/video/nightbox-scroll-poster.jpg';
+    poster.src = 'nightbox-scroll-poster.jpg';
     toggle.hidden = false;
-    const source = `assets/video/nightbox-scroll-${mobile.matches ? 'mobile' : 'desktop'}.mp4`;
+    const source = `nightbox-scroll-${mobile.matches ? 'mobile' : 'desktop'}.mp4`;
     if (loadedSource !== source) {
       loadedSource = source;
       const loadGeneration = ++generation;
