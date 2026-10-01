@@ -33,3 +33,12 @@
 
 /* Functional close control uses CSS lines, with no font or emoji glyph. */
 .dialog-close::before,.dialog-close::after{content:"";position:absolute;top:50%;left:50%;width:14px;height:1.5px;background:currentColor;pointer-events:none}.dialog-close::before{transform:translate(-50%,-50%) rotate(45deg)}.dialog-close::after{transform:translate(-50%,-50%) rotate(-45deg)}.story-mark img{width:74%;height:auto;margin:18px 0}
+
+/* Direct contact information, with native phone and email links. */
+.contact-direct{display:flex;flex-wrap:wrap;align-items:center;gap:12px 36px;margin-top:32px;padding-top:22px;border-top:1px solid #16071345;font-style:normal;position:relative;z-index:2}.contact-direct .eyebrow{font-size:12px;letter-spacing:1.2px;margin-right:auto}.contact-direct a{display:inline-flex;align-items:center;min-height:44px;min-width:0;max-width:100%;font-size:16px;font-weight:600;line-height:1.5;overflow-wrap:anywhere;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}.contact-direct a:hover{text-decoration-thickness:2px}.contact-direct a:focus-visible{outline:2px solid #160713;outline-offset:4px}
+@media(max-width:700px){.contact-direct{flex-direction:column;align-items:flex-start;gap:4px;margin-top:28px;padding-top:20px}.contact-direct .eyebrow{margin:0 0 8px}}
+
+/* WhatsApp contact action, consistent with the NIGHTBOX palette. */
+.contact-direct .contact-whatsapp{justify-content:center;min-height:48px;padding:12px 20px;border:1px solid #160713;border-radius:3px;background:#160713;color:#fff;font-size:14px;font-weight:700;text-decoration:none;transition:background .2s,box-shadow .2s}
+.contact-direct .contact-whatsapp:hover{background:#301025;box-shadow:0 4px 16px #16071326}
+@media(max-width:700px){.contact-direct .contact-whatsapp{width:100%;margin-top:14px}}
